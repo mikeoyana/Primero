@@ -1,0 +1,28 @@
+Paso,Comando
+I PARTE,
+1,
+2,
+II PARTE,
+Ejercicio 1,
+1,Realizar el fork del repositorio: https://github.com/mcas2/ExFinalEntornos2024
+2,git clone https://github.com/tuusuario/ExFinalEntornos2024cd ExFinalEntornos2024
+3,git checkout -b secondary-branchecho "Cambios realizados en la rama secundaria" > changes.txtgit add changes.txtgit commit -m "feat: cambios en la rama secundaria"
+4,git push origin secondary-branchProponer el pull request en GitHub
+Ejercicio 2,
+1,mkdir examen-ed2-tu-nombre-apellidocd examen-ed2-tu-nombre-apellidogit init
+2,Crear un repositorio remoto en GitHub y configurarlo como privado
+3,git remote add origin https://github.com/tuusuario/examen-ed2-tu-nombre-apellido.git
+4,git branch -m main vulcano
+5,mkdir -p src/handlers src/node_modules tests events layerstouch src/handlers/lambda1.js src/handlers/lambda2.js src/handlers/lambda3.js
+6,echo "events/\n*.class\n*lock.json\nsrc/node_modules/**" > .gitignoregit add .gitignoregit commit -m "chore: configurar archivo .gitignore"
+7,git checkout -b ed2-basic-lambda-functions
+8,echo "// lambda1" > src/handlers/lambda1.jsgit add src/handlers/lambda1.jsgit commit -m "feat: añadir lambda1.js"echo "// lambda2" > src/handlers/lambda2.jsgit add src/handlers/lambda2.jsgit commit -m "feat: añadir lambda2.js"echo "// lambda3" > src/handlers/lambda3.jsgit add src/handlers/lambda3.jsgit commit -m "feat: añadir lambda3.js"
+9,git push origin ed2-basic-lambda-functionsgit checkout vulcanogit merge ed2-basic-lambda-functions
+10,echo "// lambda1.test.js" > tests/lambda1.test.jsecho "// lambda2.test.js" > tests/lambda2.test.jsgit add tests/lambda1.test.js tests/lambda2.test.jsgit commit -m "test: añadir tests para lambda1 y lambda2"
+11,git reset --soft HEAD~1
+12,echo "// lambda3.test.js" > tests/lambda3.test.jsgit status
+13,git add tests/lambda1.test.js tests/lambda2.test.jsgit add capture_git_status.pnggit commit -m "docs: añadir captura de estado del repositorio"
+14,git add tests/lambda3.test.jsgit commit -m "test: añadir test para lambda3"
+15,git tag v1.0 commit_id_1git tag v2.0 commit_id_2
+16,git push origin vulcanogit push origin ed2-basic-lambda-functionsgit push --tags
+17,zip -r examen-ed2-tu-nombre-apellido.zip examen-ed2-tu-nombre-apellido
