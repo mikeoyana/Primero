@@ -1,0 +1,13 @@
+Paso,Comando
+1,mkdir ExPEntornosTuNombreTuApellidocd ExPEntornosTuNombreTuApellidogit init
+2,git config user.email "examen@tunombre.com"
+3,git config --local --list
+4,git branch -m main exam
+5,git config --global alias.st status
+6,echo "# Examen parcial ED\n## Nombre y apellidos\n### $(date)" > readme.mdgit add readme.mdgit commit -m "Commit raíz con readme.md"
+7,git checkout -b expentornos-control-de-versiones
+8,echo "# Github es un programa que sirve para ejecutar scripts de python\n## Linux es software privativo con licencia freemium, por eso se considera libre\n## La máquina que se considera precedesora del ordenador se llama máquina de software\n## Git está pensado para versionar binarios" > control-de-versionesgit add control-de-versionesgit commit -m "Añadir información incorrecta en control-de-versiones"
+9,git checkout examecho "# GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.\n## Linux es un sistema operativo libre y de código abierto, bajo la licencia GPL.\n## La máquina que se considera antecesora del ordenador actual es la máquina analítica de Charles Babbage.\n## Git está optimizado para manejar código fuente y no binarios debido a la forma en que rastrea y almacena cambios." > control-de-versionesgit add control-de-versionesgit commit -m "Corregir información en control-de-versiones"
+10,git merge expentornos-control-de-versiones
+11,git log --oneline --graph --decorate --all
+12,zip -r ExPEntornosTuNombreTuApellido.zip ExPEntornosTuNombreTuApellido
